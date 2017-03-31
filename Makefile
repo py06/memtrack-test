@@ -1,5 +1,6 @@
+CFLAGS=-lm
 
 test.o:
-	gcc -o test test.c
+	gcc $(CFLAGS) -o test test.c
 
 test:	test.o
